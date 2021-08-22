@@ -75,7 +75,7 @@ bool wantToPlayAgain()
         {
             cin.ignore(IGNORE_CHARS, '\n');
 
-            input = tolower(input)
+            input = tolower(input);
         }
 
     } while (failure);
