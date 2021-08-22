@@ -31,10 +31,10 @@ void playGame()
     int numberOfTries = ceil(log2(UPPER_BOUND));
     int guess = 0;
 
-    cout << "The range of the number is between 1 and 100" << endl;
 
     do
     {
+        
         guess = getGuess(numberOfTries);
         if(guess != secretNumber)
         {
@@ -97,7 +97,7 @@ int getGuess(int numberOfTries)
     do
     {
         failure = false;
-
+        cout << "The range of the number is between 1 and 100" << endl;
         cout << "Please enter your guess (number of guesses left: " << numberOfTries << "): " << endl;
         cin >> guess;
         if(cin.fail())
